@@ -2,6 +2,29 @@
 
 <p>This project is a visual inspection system using deep learning to assist technicians in identifying potential issues with equipment during preventive maintenance. The system is built with Industry 4.0 technologies such as IoT, big data analytics, and deep learning to predict and prevent equipment failure before it occurs.</p>
 
+<h2>Directory Structure</h2>
+
+<pre>
+.
+├── app
+│   ├── bin
+│   ├── lib
+│   └── share
+├── data
+│   ├── csv
+│   ├── data_flir
+│   └── rgb
+├── models
+│   └── __pycache__
+├── runs
+│   └── detect
+└── utils
+    ├── aws
+    ├── google_app_engine
+    ├── __pycache__
+    └── wandb_logging
+</pre>
+
 <h2>Installation</h2>
 
 <p>To install the project, follow these steps:</p>
@@ -37,4 +60,3 @@ $ python app_graph.py
 <h2>Note</h2>
 
 <p>The code assumes the dataset is in a specific format and naming convention, so be sure to follow the instructions in the code comments when preparing the dataset.</p>
-
