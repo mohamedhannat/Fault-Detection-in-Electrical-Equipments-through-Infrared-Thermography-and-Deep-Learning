@@ -17,6 +17,10 @@
   $ cd preventive-maintenance-visual-inspection-system
   </pre></li>
 
+  <li>Download the dataset from <a href="https://drive.google.com/file/d/1BzfybGG1swTHTa-LB7nqrLLTRcnjJ-WE/view?usp=sharing">this link</a></li>
+
+  <li>Place the dataset in the `data` directory.</li>
+
   <li>Install the required packages using pip:<br>
   <pre>
   $ pip install -r requirements.txt
@@ -32,5 +36,5 @@ $ python app_graph.py
 
 <h2>Note</h2>
 
-<p>The project requires a dataset of images of equipment, including both normal and damaged equipment, to train the deep learning models. The dataset should be placed in the `data` directory. The code assumes the dataset is in a specific format and naming convention, so be sure to follow the instructions in the code comments when preparing the dataset.</p>
+<p>The code assumes the dataset is in a specific format and naming convention, so be sure to follow the instructions in the code comments when preparing the dataset.</p>
 
