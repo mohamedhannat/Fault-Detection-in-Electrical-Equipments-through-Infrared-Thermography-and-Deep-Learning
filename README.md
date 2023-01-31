@@ -7,9 +7,8 @@ You need to download this data folder first from this link , [Data](https://driv
 After that insert Data folder on the same repository of project .
 
 your repository should be like that :
-
-#├── data
-#│   ├── csv
+├── data
+   ├── csv
 │   ├── data_flir
 │   └── rgb
 ├── models
