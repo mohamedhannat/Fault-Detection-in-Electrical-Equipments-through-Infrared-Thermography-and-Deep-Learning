@@ -1,15 +1,11 @@
-<h1>Preventive Maintenance Visual Inspection System</h1>
+<h1>Fault Detection in Electrical Equipment using Infrared Thermography and Deep Learning</h1>
 
 <p>This project is a visual inspection system using deep learning to assist technicians in identifying potential issues with equipment during preventive maintenance. The system is built with Industry 4.0 technologies such as IoT, big data analytics, and deep learning to predict and prevent equipment failure before it occurs.</p>
 
 <h2>Directory Structure</h2>
 
 <pre>
-.
-├── app
-│   ├── bin
-│   ├── lib
-│   └── share
+
 ├── data
 │   ├── csv
 │   ├── data_flir
@@ -32,12 +28,12 @@
 <ol>
   <li>Clone the repository to your local machine:<br>
   <pre>
-  $ git clone https://github.com/[username]/preventive-maintenance-visual-inspection-system.git
+  $ git clone 
   </pre></li>
 
   <li>Navigate to the project directory:<br>
   <pre>
-  $ cd preventive-maintenance-visual-inspection-system
+  $ cd Fault-Detection-in-Electrical-Equipment-using-Infrared-Thermography-and-Deep-Learning
   </pre></li>
 
   <li>Download the dataset from <a href="https://drive.google.com/file/d/1BzfybGG1swTHTa-LB7nqrLLTRcnjJ-WE/view?usp=sharing">this link</a></li>
