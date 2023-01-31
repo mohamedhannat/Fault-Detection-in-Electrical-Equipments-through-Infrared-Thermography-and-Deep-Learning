@@ -53,6 +53,4 @@
 $ python app_graph.py
 </pre></p>
 
-<h2>Note</h2>
 
-<p>The code assumes the dataset is in a specific format and naming convention, so be sure to follow the instructions in the code comments when preparing the dataset.</p>
