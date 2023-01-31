@@ -28,7 +28,7 @@
 <ol>
   <li>Clone the repository to your local machine:<br>
   <pre>
-  $ git clone 
+  $ git clone https://github.com/mohamedhannat/Fault-Detection-in-Electrical-Equipment-using-Infrared-Thermography-and-Deep-Learning.git
   </pre></li>
 
   <li>Navigate to the project directory:<br>
