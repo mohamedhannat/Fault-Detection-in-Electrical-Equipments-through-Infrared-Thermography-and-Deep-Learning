@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFil
 from PyQt5.QtGui import QIcon
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-import subprocess
+import subprocess 
 import pandas as pd
 #from splash import SplashScreen
 from PyQt5.QtGui import QMovie
@@ -469,14 +469,54 @@ class stackedExample(QWidget):
             temp=df3['temp (c)'].mean()
          
             etat=""
-            if(temp<= 25):
-                  etat="off"
-            elif (temp>25 and temp <=40):
-                  etat="normal"
-            elif (temp>40 and temp <=55):
-                  etat="defect"
-            elif (temp> 55):
-                  etat="dangerous defect"
+            labels_arr = ["Normal", "Defect", "Dangerous defect"] 
+            
+            if equipment == "Circuit breaker":
+                if temp <= 60:
+                    etat = labels_arr[0]
+                elif 60 < temp <= 85:
+                    etat = labels_arr[1]
+                else:
+                    etat = labels_arr[2]
+            elif equipment == "Contactor":
+                if temp <= 45:
+                    etat = labels_arr[0]
+                elif 45 < temp <= 60:
+                    etat = labels_arr[1]
+                else:
+                    etat = labels_arr[2]
+            elif equipment == "Motor starter":
+                if 40 <= temp <= 50:
+                    etat = labels_arr[0]
+                elif 50 < temp <= 70:
+                    etat = labels_arr[1]
+                else:
+                    etat = labels_arr[2]
+            elif equipment == "Relay":
+                if temp <= 35:
+                    etat = labels_arr[0]
+                elif 35 < temp <= 80:
+                    etat = labels_arr[1]
+                else:
+                    etat = labels_arr[2]
+            elif equipment == "Transformer":
+                if temp <= 40:
+                    etat = labels_arr[0]
+                elif 40 < temp <= 65:
+                    etat = labels_arr[1]
+                else:
+                    etat = labels_arr[2]
+            elif equipment == "Motor pump":
+                if temp <= 110:
+                    etat = labels_arr[0]
+                elif 110 < temp <= 180:
+                    etat = labels_arr[1]
+                elif 180 < temp <= 200:
+                    etat = labels_arr[2]
+                else:
+                    etat = "T > 200C"
+            else:
+                etat = "Invalid equipment type"
             label_name=names[labels_arr[x]]+","+str("%.2f"%temp)+","+etat
             self.currentQRubberBand.setGeometry(QRect(xmin_arr[x],ymin_arr[x], xmax_arr[x]-xmin_arr[x],ymax_arr[x]-ymin_arr[x]))
             #self.currentQRubberBand.hide()
